@@ -4,10 +4,18 @@ module.exports = ({ env }) => ({
     providerOptions: {
       accessKeyId: env("AWS_ACCESS_KEY_ID"),
       secretAccessKey: env("AWS_ACCESS_SECRET"),
-      region: "aws-region",
+      region: "us-east-1",
       params: {
-        Bucket: "my-bucket",
+        Bucket: "galeria-anderson",
       },
     },
+  },
+
+  email: {
+    provider: "sendgrid",
+    providerOptions: {
+      apiKey: env("SENDGRID_API_KEY"),
+    },
+    settings: {},
   },
 });
