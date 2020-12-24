@@ -1,3 +1,1 @@
-# Strapi application
-
-A quick description of your strapi application
+# Strapi aws-s3 and send email with sendgrid
